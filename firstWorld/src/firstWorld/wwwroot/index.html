@@ -7,7 +7,7 @@
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> 
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
-<body class="fill-screen" style="background-image: url('img/photo-1415226355641-7f90f89def6a.jpg');">
+<body class="fill-screen">
     <header>
         <nav class="navbar navbar-default navbar-fixed-top cbp-af-header">
             <div class="container-fluid">
@@ -21,7 +21,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="#home">
-                        <img src="img/azs-logo-30pct.png" />
+                        <img src="img/azs-logo-30pct_no_text.png" style="height: auto; width: auto;" />
                     </a>
                 </div>
 
@@ -39,10 +39,14 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="fill-screen" style="background-image: url(../img/photo-1415226355641-7f90f89def6a.jpg);">
-
+            <div class="fill-screen">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-push-2 text-section">
+                        <p>This area will serve as example!</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-8 col-sm-push-2">
+            <div class="col-sm-8 col-sm-push-2 text-section">
                 <p>This area will serve as example!</p>
             </div>
         </div>
@@ -52,18 +56,18 @@
         &copy; Project 2016
     </footer>
 
-    <!--<script>
-        $(function () {
-            $(window).on("load resize", function () {
-                $(".fill-screen").css("height", window.innerHeight);
-            });
-        });
-    </script>-->
-
     <script src="lib/underscore/underscore-min.js"></script>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpanimatedheader.js"></script>
+
+    <script>
+        $(function () {
+            $(window).on("load resize", function () {
+                $(".fill-screen").css("height", window.innerHeight);
+            });
+        });
+    </script>
 </body>
 </html>
