@@ -7,7 +7,7 @@
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> 
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
-<body class="fill-screen">
+<body>
     <header>
         <nav class="navbar navbar-default navbar-fixed-top cbp-af-header">
             <div class="container-fluid">
@@ -21,7 +21,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="#home">
-                        <img src="img/azs-logo-30pct_no_text.png" style="height: auto; width: auto;" />
+                        <img src="img/azs-logo-30pct_no_text.png" />
                     </a>
                 </div>
 
@@ -38,18 +38,22 @@
         </nav>
     </header>
     <div class="container-fluid">
-        <div class="row">
-            <div class="fill-screen">
-                <div class="row">
+        <section class="row">
+            <section class="fill-screen">
+                
                     <div class="col-sm-8 col-sm-push-2 text-section">
                         <p>This area will serve as example!</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-8 col-sm-push-2 text-section">
-                <p>This area will serve as example!</p>
-            </div>
-        </div>
+                
+            </section>
+            <section class="fill-screen">
+                
+                    <div class="col-sm-8 col-sm-push-2 text-section">
+                        <p>This area will serve as example!</p>
+                    </div>
+                
+            </section>
+        </section>
        
     </div>
     <footer class="container-fluid">
@@ -61,13 +65,7 @@
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpanimatedheader.js"></script>
+    <script src="js/scrolling.js"></script>
 
-    <script>
-        $(function () {
-            $(window).on("load resize", function () {
-                $(".fill-screen").css("height", window.innerHeight);
-            });
-        });
-    </script>
 </body>
 </html>
